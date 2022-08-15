@@ -2,118 +2,92 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="index.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tennis Break Point</title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
 </head>
-  <body>
-    <header id="header">
-      <div class="header__logo">
-          <img width="50" src="img/tennis-ball.jpg" id="header-img" alt="logo">
-        </div>
-      <nav id="nav-bar">
-        <a href="#feautures" class="nav-link">Feautures</a>
-        <a href="#video" class="nav-link">Video</a>
-        <a href="#pricing" class="nav-link">Pricing.</a>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <img src="/img/tennis-ball.jpg" alt="Tennis Break Point Logo">
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#rigid">Features</a></li>
+          <li><a href="#hardtail">Video</a></li>
+          <li><a href="#full-suspension">Pricing</a></li>
+        </ul>
       </nav>
     </header>
-    <section class="section-form">
-        <h2>Quality and unique equipment for tennis players </h2>
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input name="email" id="email" type="email" placeholder="Enter your email address" required="">
-        <input id="submit" type="submit" value="Get Started" class="btn">
+    <main>
+      <section class="section-form">
+      <form class="form" action="#">
+        <input type="email" name="client-email" required placeholder="Enter your e-mail address">
+        <input class="btn" type="submit" value="Click here">
       </form>
-    </section>
-    <div class="container">
-      <div id="feautures">
-        <div class="grid">
-          <div class="grid__icon">
-            <img src="img/premium-icon.png" alt="premium">
-          </div>
-          <div class="grid__text">
-            <h2>Premium Materials</h2>
-            <p>Only brand things you will defintely like.</p>
-          </div>
-        </div>
-        <div class="grid">
-          <div class="grid__icon">
-            <img src="img/shipping-icon.png" alt="shipping">
-          </div>
-          <div class="grid__text">
-            <h2>Fast Shipping</h2>
-            <p>We make sure you recieve your purchase as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
-          </div>
-        </div>
-        <div class="grid">
-          <div class="grid__icon">
-            <img src="img/quality-icon.png" alt="quality">
-          </div>
-          <div class="grid__text">
-            <h2>Quality Assurance</h2>
-            <p>For every purchase you make, we will ensure there are no damages or faults. </p>
-          </div>
-        </div>
+      <h1>Our Policy</h1>
+      <div class="pm">
+        <h2 id="premium-materials">Premium Materials</h2>
+        <p>Only brand things you will defintely like.</p>
       </div>
-      <div >
+      <div class="fs">
+        <h2 id="fast-shipping">Fast Shipping</h2>
+        <p>We make sure you recieve your purchase as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+      </div>
+      <div class="qa">
+        <h2 id="quality-assurance">Quality Assurance</h2>
+        <p>For every purchase you make, we will ensure there are no damages or faults.</p>
+      </div>
+      <div class="video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/j3sRxYeyn0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <div id="pricing">
-        <div class="pricing__card">
-          <div class="card__img"><img src="img/babolat-rafa.png" alt="Babolat Rafa Rocket"></div>
-          <div class="card__text">
-            <span>$259</span>
-            <p>Babolat Pure Aero Rafa.</p>
-            <p>Headsize: 100 sq. in.</p>
-            <p>Length: 27"</p>
-            <p>Beam Width: 23/26/23mm</p>
-          </div>
-          <div class="card__btn">
-            <button class="btn">SELECT</button>
-          </div>
+      <section id="product">
+        <div class="wilson">
+          <h2>Wilson Blaed 98.</h2>
+          <p>249$</p>
+          <ul class="photo">
+            <li>Headsize: 98 sq in</li>
+            <li>Length: 27 in/68.6 cm.</li>
+            <li>Beam Width: 22/26/24mm</li>
+          </ul>
+          <button class="btn">Select</button>
         </div>
-        <div class="pricing__card">
-          <div class="card__img"><img src="img/babolat-wilson.png" alt="Babolat Wilson Racket"></div>
-          <div class="card__text">
-            <span>$249</span>
-            <p>Wilson Blaed 98.</p>
-            <p>Headsize: 98 sq in</p>
-            <p>Length: 27 in/68.6 cm.</p>
-            <p>Beam Width: 22/26/24mm</p>
-          </div>
-          <div class="card__btn">
-            <button class="btn">SELECT</button>
-          </div>
+        <div class="babolat">
+          <h2>Babolat Pure Aero Rafa.</h2>
+          <p>259$</p>
+          <ul>
+            <li>Headsize: 100 sq. in.</li>
+            <li>Length: 27"</li>
+            <li>Beam Width: 23/26/23mm</li>
+          </ul>
+          <button class="btn">Select</button>
         </div>
-        <div class="pricing__card">
-          <div class="card__img"><img src="img/babolat-yonex.png" alt="Babolat Yonex Racket"></div>
-          <div class="card__text">
-            <span>$104</span>
-            <p>Yonex Ezone Ace 102.</p>
-            <p>Headsize: 92 sq in  </p>
-            <p>Length: 27 in/63.4 cm.</p>
-            <p>Beam width: 24mm/26.5 mm/23mm</p>
-          </div>
-          <div class="card__btn">
-            <button class="btn">SELECT</button>
-          </div>
+        <div class="yonex">
+          <h2>Yonex Ezone Ace 102.</h2>
+          <p>1200$</p>
+          <ul>
+            <li>Headsize: 92 sq in</li>
+            <li>Length: 27 in/63.4 cm.</li>
+            <li>Beam width: 24mm/26.5 mm/23mm</li>
+          </ul>
+          <button class="btn">Select</button>
         </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__nav">
+        <a href="#feautures" class="nav-link">Features</a>
+        <a href="#video" class="nav-link">Video</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
       </div>
-      <div id="footer">
-        <div class="footer__nav">
-          <a href="#feautures" class="nav-link">Feautures</a>
-          <a href="#video" class="nav-link">Video</a>
-          <a href="#pricing" class="nav-link">Pricing.</a>
-        </div>
-        <div class="footer__text">
-          <p>Copyright 2022, Tennis Break Point</p>
-        </div>
-      </div>
-    </div>
-  </body>
+      <div class="footer__text">
+        <p>Copyright 2022. Tennis Break Point</p>
+    </footer>
+  </div>
+</body>
 
 </html>
